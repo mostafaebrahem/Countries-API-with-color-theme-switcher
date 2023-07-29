@@ -16835,7 +16835,7 @@ let api=[
   for(let x of selected){
     
     x.addEventListener("change",()=>{
-      console.log(x.value);
+      // console.log(x.value);
       selectedValue=x.value
       if(selectedValue=="Filter by Region"&&search.value==""){
         cartona=api;
@@ -16850,7 +16850,7 @@ let api=[
         })
       }
       
-      console.log(cartona)
+      // console.log(cartona)
       view()
     })
   }
@@ -16859,16 +16859,16 @@ let api=[
 
   window.addEventListener("load",()=>{
     for(let x of selected){ 
-        console.log(x.value);
+        // console.log(x.value);
         selectedValue=x.value
       }
-    console.log(selected)
+    // console.log(selected)
     cartona=api;
 
     view()
 }) 
 search.addEventListener("keyup",(e)=>{
-    console.log(selectedValue)
+    // console.log(selectedValue)
     cartona=api.filter((result)=>{
         if(selectedValue!="Filter by Region"){
           return (result.name.includes(search.value)&&result.region==selectedValue)
@@ -16877,7 +16877,7 @@ search.addEventListener("keyup",(e)=>{
         }
         
     })
-    console.log("cartona ",cartona)
+    // console.log("cartona ",cartona)
     
     view()
     
@@ -16897,8 +16897,8 @@ function view(){
       }
 }
 function viewDetails(i){
-  console.log(i)
-  console.log(cartona[i])
+  // console.log(i)
+  // console.log(cartona[i])
   detailsSection.innerHTML=` <div class="container">
   <button onclick="back()" class="btn details-btn px-4 mb-4"><i class="fa-solid fa-left-long"></i> Back</button>
   <div class="row">
