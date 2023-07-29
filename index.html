@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries</title>
+</head>
+<body id="myBody" class="my-body" >
+  <div id="all">
+    <div class="navbar d-flex justify-content-between px-3 w-100  mb-4">
+        <h1>Where in the world?</h1>
+        <h6 onclick="darkMode()"><i class="fa-solid fa-moon"></i> Dark Mode</h6>
+    </div>
+    <div id="countriesView" class="container">
+        <div class="row m-auto">
+            <div class="col-md-12 container-fluid d-flex justify-content-between ">
+                <input id="search" type="text" placeholder="Search for a country" class="form-control input w-50">
+               
+                    
+                    <select  class="countries w-25 form-control  h-100 p-2  ">
+                        <option class="">Filter by Region</option>
+                        <option >Africa</option>
+                        <option >Americas</option>
+                        <option >Asia</option>
+                        <option >Europe</option>
+                        <option >Oceania</option>
+                        
+                    </select>
+                
+
+
+            </div>
+           
+            
+            <div  id="components" class="col-md-12  row  ">
+               
+            </div>
+        
+        </div>
+    </div>
+</div>
+<div id="details" class="details  m-0 p-5">
+    
+</div>
+    <script src="bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+    <script src="fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/js/all.min.js"></script>
+</body>
+</html>
